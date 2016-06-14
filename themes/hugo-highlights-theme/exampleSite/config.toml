@@ -1,0 +1,137 @@
+# Site settings
+baseurl = "http://compasswoodworking.com/"
+languageCode = "en-us"
+title = "Compass Woodworking"
+theme = "hugo-highlights-theme"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
+
+[params]
+
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "Compass Woodworking"
+  description = "Great furniture designed and built in California"
+
+  # For a static site its no possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitiors can send up to a 1000 eamails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email yourself to confirm your account
+  # - click the confirm link in the email form www.formspree.io
+  # - Thats all. Enjoy mailing!
+  email = "info@compasswoodworking.com"
+
+  # Hero Section
+  [params.hero]
+    title = "Compass Woodworking"
+    description = "sophisticated simplicity"
+    buttonText = "begin"
+
+  # about section
+  [params.about]
+    enable = true
+    title = "Our Story"
+    description = "Will be here soon"
+    buttonText = "next"
+    # the picture is storead at static/images/
+    picture = "planewall.jpg"
+
+  # skill section
+  [params.skill_list]
+    enable = true
+    title = "Stuff we do"
+    description = "Will be here soon"
+    buttonText = "next"
+    # the picture is storead at static/images/
+    picture = "roughwood.jpg"
+
+    [[params.skills]]
+      icon = "fa-camera-retro"
+      title = "Defined"
+
+    [[params.skills]]
+     icon = "fa-coffee"
+     title = "Discussed"
+
+    [[params.skills]]
+      icon = "fa-pencil"
+      title = "Desined in California"
+
+    [[params.skills]]
+      icon = "fa-heart"
+      title = "Built with love"
+
+    
+  # infos section
+  [params.infos]
+    enable = true
+    title = "One more thing"
+    description = "Let's build this"
+    # the picture is storead at static/images/
+    picture = "table.jpg"
+
+  # footer section
+  # this section includes
+  #
+  # - the contact form
+  # - social icons
+  #
+  # It's possible to disable the hole footer or the the disable only social icons or contact form
+
+  [params.footer]
+    enable = true
+    title = "Get in Touch"
+
+    # contact form
+    [params.footer.contact]
+      enable = true
+
+    [params.footer.contact.form]
+      name = "Name"
+      email = "Your Email"
+      message = "Your Message"
+      buttonText = "send message"
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Twitter"
+        icon = "fa-twitter"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Facebook"
+        icon = "fa-facebook"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Instagramm"
+        icon = "fa-instagram"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "#"
+
+    # copyright
+    #[params.footer.copyright.notice]
+
+      [[params.footer.copyright.notice]]
+        text = "© Compass Woodworking"
+
+      [[params.footer.copyright.notice]]
+        text = "Design: [HTML5UP](//html5up.net)"
